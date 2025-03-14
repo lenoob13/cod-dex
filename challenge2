@@ -1,0 +1,14 @@
+// Write code below 💖
+const targetNumber=Math.floor(Math.random()*99);
+let drawNumber=Math.floor(Math.random()*99);
+let count=0;
+while (count!=10){
+  if(drawNumber!=targetNumber){
+    console.log("No Match");
+  }else{
+    console.log("Match");
+    count+=1;
+  }
+  drawNumber=Math.floor(Math.random()*99);
+}
+console.log("The number "+targetNumber+" was found 10 times.");
